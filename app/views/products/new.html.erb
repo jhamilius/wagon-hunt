@@ -1,0 +1,22 @@
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12 col-sm-6 col-sm-offset-3">
+			<h1 class="text-center">A jouter un produit</h1>
+
+
+
+			<%= simple_form_for @product do |f| %>
+				<%= f.input :name , placeholder: "Kudoz", label: "Which product ?"  %>
+				<%= f.input :tagline  , placeholder: "Tinder for jobs", label: "Which tagline ?"%>
+				<%= f.input :url  , placeholder: "http://kudoz.co", label: "Which URL ?"%>
+				<%= f.button :submit, "Ajouter" , class: "btn btn-primary"%>
+			<% end %>
+				
+
+
+		</div>
+	</div>
+</div>
+
+
+
